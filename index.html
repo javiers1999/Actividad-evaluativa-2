@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>formulario ts</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+
+        <div id="mensaje"></div>
+
+        <form id="formulario" method="POST" action="#">
+            <label for="nombres">Nombres</label>
+            <input id="nombres" class="campos" maxlength="30" placeholder="nombres" required>
+
+            <label for="apellidos">apellidos</label>
+            <input type="text" id="apellidos" class="campos" maxlength="30" placeholder="apellidos" required>
+
+            <label for="rut">rut</label>
+            <input type="text" id="rut" class="campos" maxlength="30" placeholder="RUT" required oninput="checkRut(this)" required>
+
+            <label for="correo">correo</label>
+            <input type="email" id="correo" class="campos" maxlength="30" placeholder="correo electronico" required>
+
+            <label for="fono">telefono</label>
+            <input type="text" id="fono" class="campos" minlength="9" maxlength="9" placeholder="telefono" required>
+
+            <label for="chose">lenguajes de programacion</label>
+                <ul id ="seleccion">
+                    javier
+                    <li>
+                        <input type="checkbox" id="chose" class="campos" >
+                    </li>
+                    <li>
+                        <input type="checkbox" id="chose" class="campos" >
+                    </li>
+                    <li>
+                        <input type="checkbox" id="chose" class="campos" >
+                    </li>
+                    <li>
+                        <input type="checkbox" id="chose" class="campos" >
+                    </li>
+                </ul>
+            
+            <label for="nivel">nivel de programacion</label>
+            <input type="range" id="nivel" class="campos" >
+
+            <label for="exp">años de experiencia</label>
+            <input type="radio" id="exp" class="campos" required>
+
+            <label for="desc">describase en breves palabras</label>
+            <textarea></textarea>
+
+            <button type="submit" id="boton" class="botones">enviar datos</button>
+
+            <button type="reset" id="boton2" class="botones">resetear</button>
+
+        </form>
+        <script src="js/app.js" async defer></script>
+        <script src="js/validarRUT.js" async defer></script>
+    </body>
+</html>
