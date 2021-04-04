@@ -6,7 +6,6 @@ formulario.addEventListener("submit", function(evento){
     mensaje.style.display="block";
     mensaje.innerHTML="hemos recibido sus datos, pronto nos estaremos comunicando con usted";
     mensaje.style.color="navy";
-
     evento.preventDefault();
 });
 
