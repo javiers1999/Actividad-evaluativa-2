@@ -8,7 +8,6 @@ formulario.addEventListener("submit", function(evento){
     mensaje.style.color="navy";
     evento.preventDefault();
 });
-
 function limpiarDatos(){
     document.getElementById("formulario").reset();
 }
