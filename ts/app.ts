@@ -1,7 +1,4 @@
-let formulario=document.getElementById("formulario");
-
-let nombres:any=document.getElementById("nombres");
-let apellido:any=document.getElementById("apellidos");
+let formulario:any=document.getElementById("formulario");
 let mensaje:any=document.getElementById("mensaje");
 
 formulario.addEventListener("submit", function(evento){
@@ -12,3 +9,7 @@ formulario.addEventListener("submit", function(evento){
 
     evento.preventDefault();
 });
+
+function limpiarDatos(){
+    document.getElementById("formulario").reset();
+}

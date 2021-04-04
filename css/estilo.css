@@ -1,61 +1,52 @@
-#formulario{
-    width: 500px;
-    background: #24303c;
-    padding: 50px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'sassoon';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-    text-align: center;
-}
-  
-#formulario{
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: white;
-}
-  
-.campos{
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-}
-  
-#formulario a {
-    color: white;
-    text-decoration: none;
-}
-  
-#formulario a:hover {
-    color: white;
-    text-decoration: underline;
-}
-  
-#formulario .botones {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-}   
 
-ul{
-    list-style-type: none;
+fieldset{
+    margin-left: 75%;
+    background-color: #1a5276;
+}
+
+form#formulario{
+    font-size: 100px;
+    width: 50%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+input.campos1{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+    background-color:#2196f3;
+}
+
+ul li.seleccion{
+    font-size: 20px;
+}
+
+div#EXP{
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+input#level{
+    margin-top: 30px;
+    width: 300px;
 }
 
 #mensaje {
     display: none;
     text-align: center;
     font-size: 100px;
+    margin-top: 20%;
+}
+
+.botones{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background-color:#2196f3 ;
 }

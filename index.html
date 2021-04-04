@@ -7,59 +7,88 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/estilo.css">
-    </head>
-    <body>
+</head>
+<body>
 
-        <div id="mensaje"></div>
+    <div id="mensaje"></div>
+        
+    <form id="formulario" method="POST" action="#">
+        <fieldset>
+            <legend>formulario</legend>
+        <ul>
+            <li>
+                <label for="nombres">Nombres</label>
+                <input class="campos1" maxlength="30" placeholder="nombres" required>
+            </li>
 
-        <form id="formulario" method="POST" action="#">
-            <label for="nombres">Nombres</label>
-            <input id="nombres" class="campos" maxlength="30" placeholder="nombres" required>
+            <li>
+                <label for="apellidos">apellidos</label>
+                <input type="text" class="campos1" maxlength="30" placeholder="apellidos" required>
+            </li>
 
-            <label for="apellidos">apellidos</label>
-            <input type="text" id="apellidos" class="campos" maxlength="30" placeholder="apellidos" required>
+            <li>
+                <label for="rut">rut</label>
+                <input type="text" class="campos1" maxlength="10" placeholder="RUT" oninput="checkRut(this)" required>
+            </li>
 
-            <label for="rut">rut</label>
-            <input type="text" id="rut" class="campos" maxlength="30" placeholder="RUT" required oninput="checkRut(this)" required>
+            <li>
+                <label for="correo">correo</label>
+                <input type="email" class="campos1" maxlength="30" placeholder="correo electronico" required>
+            </li>
 
-            <label for="correo">correo</label>
-            <input type="email" id="correo" class="campos" maxlength="30" placeholder="correo electronico" required>
+            <li>
+                <label for="fono">telefono</label>
+                <input type="text" class="campos1" minlength="9" maxlength="9" placeholder="telefono" required>
+            </li>
 
-            <label for="fono">telefono</label>
-            <input type="text" id="fono" class="campos" minlength="9" maxlength="9" placeholder="telefono" required>
+            <li>
+                <label for="chose">lenguajes de programacion</label>
+                    <ul>
+                        <li class="seleccion">
+                            java
+                            <input type="checkbox" class="campos" >
+                        </li>
+                        <li class="seleccion">
+                            C
+                            <input type="checkbox" class="campos" >
+                        </li>
+                        <li class="seleccion">
+                            php
+                            <input type="checkbox" id="chose" class="campos" >
+                        </li>
+                    </ul>
+            </li>
 
-            <label for="chose">lenguajes de programacion</label>
-                <ul id ="seleccion">
-                    javier
-                    <li>
-                        <input type="checkbox" id="chose" class="campos" >
-                    </li>
-                    <li>
-                        <input type="checkbox" id="chose" class="campos" >
-                    </li>
-                    <li>
-                        <input type="checkbox" id="chose" class="campos" >
-                    </li>
-                    <li>
-                        <input type="checkbox" id="chose" class="campos" >
-                    </li>
-                </ul>
-            
-            <label for="nivel">nivel de programacion</label>
-            <input type="range" id="nivel" class="campos" >
+            <li>
+                <label for="nivel">nivel de programacion</label>
+                <input id="level" type="range" class="campos" >
+            </li>
 
-            <label for="exp">años de experiencia</label>
-            <input type="radio" id="exp" class="campos" required>
+            <li>
+                <label for="exp">años de experiencia</label>
+                <div id="EXP">
+                    <input type="radio" name="años" class="campos">0.
+                    <input type="radio" name="años" class="campos">1.
+                    <input type="radio" name="años" class="campos">2.
+                    <input type="radio" name="años" class="campos">3.
+                    <input type="radio" name="años" class="campos">4.
+                    <input type="radio" name="años" class="campos">5.
+                </div>
+            </li>
 
-            <label for="desc">describase en breves palabras</label>
-            <textarea></textarea>
+            <li>
+                <label id="espacio" for="desc">describase en breves palabras</label>
+                <textarea rows="10" cols="50" maxlength="300"></textarea>
+            </li>
 
-            <button type="submit" id="boton" class="botones">enviar datos</button>
-
-            <button type="reset" id="boton2" class="botones">resetear</button>
-
-        </form>
-        <script src="js/app.js" async defer></script>
-        <script src="js/validarRUT.js" async defer></script>
-    </body>
+            <li>
+                <button type="submit" id="boton" class="botones">enviar datos</button>
+                <button type="button" id="boton2" class="botones" onclick="limpiarDatos()">resetear</button>
+            </li>
+        </ul>
+        </fieldset>
+    </form>
+    <script src="js/app.js" async defer></script>
+    <script src="js/validarRUT.js" async defer></script>
+</body>
 </html>
