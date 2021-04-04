@@ -1,5 +1,5 @@
 fieldset{
-    margin-left: 75%;
+    margin-left: 60%;
     background-color: #1a5276;
 }
 
@@ -33,7 +33,11 @@ div#EXP{
 
 input#level{
     margin-top: 30px;
-    width: 300px;
+    width: 600px;
+}
+
+input.check{
+    float: left;
 }
 
 #mensaje {
@@ -48,4 +52,11 @@ input#level{
     border: none;
     font-size: 20px;
     background-color:#2196f3 ;
+    margin-top: 50px;
+}
+
+textarea{
+    background-color: #2196f3;
+    font-size: 20px;
+    margin-top: 20px;
 }

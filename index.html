@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-
     <div id="mensaje"></div>
         
     <form id="formulario" method="POST" action="#">
@@ -42,26 +41,38 @@
             </li>
 
             <li>
-                <label for="chose">lenguajes de programacion</label>
+                <label for="chose">seleccione el/los lenguajes de interes</label>
                     <ul>
                         <li class="seleccion">
-                            java
-                            <input type="checkbox" class="campos">
+                            Java
+                            <input type="checkbox" class="check">
                         </li>
                         <li class="seleccion">
-                            C
-                            <input type="checkbox" class="campos">
+                            C++
+                            <input type="checkbox" class="check">
                         </li>
                         <li class="seleccion">
-                            php
-                            <input type="checkbox" id="chose" class="campos" >
+                            Python
+                            <input type="checkbox" class="check">
+                        </li>
+                        <li class="seleccion">
+                            C#
+                            <input type="checkbox" class="check">
+                        </li>
+                        <li class="seleccion">
+                            PHP
+                            <input type="checkbox" class="check">
+                        </li>
+                        <li class="seleccion">
+                            TypeScript
+                            <input type="checkbox" class="check">
                         </li>
                     </ul>
             </li>
 
             <li>
                 <label for="nivel">nivel de programacion</label>
-                <input id="level" type="range" class="campos" >
+                <input id="level" type="range" class="campos">
             </li>
 
             <li>
@@ -83,12 +94,12 @@
 
             <li>
                 <button type="submit" id="boton" class="botones">enviar datos</button>
-                <button type="button" id="boton2" class="botones" onclick="limpiarDatos()">resetear</button>
+                <button type="button" id="boton2" class="botones" onclick="limpiarDatos()">limpiar</button>
             </li>
         </ul>
         </fieldset>
     </form>
     <script src="js/app.js" async defer></script>
-    <script src="js/validarRUT.js" async defer></script>
+    <script src="js/validarRut.js" async defer></script>
 </body>
 </html>
