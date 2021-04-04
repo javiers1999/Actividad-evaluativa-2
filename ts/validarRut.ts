@@ -30,10 +30,8 @@ function checkRut(rut) {
             multiplo = 2;
         }
     }
-    
     // Calcular Dígito Verificador en base al Módulo 11
     let dvEsperado = 11 - (suma % 11);
-
     // Casos Especiales (0 y K)
     dv = (dv == 'K') ? 10 : dv;
     dv = (dv == 0) ? 11 : dv;

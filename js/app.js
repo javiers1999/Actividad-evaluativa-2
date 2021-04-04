@@ -10,3 +10,4 @@ formulario.addEventListener("submit", function (evento) {
 function limpiarDatos() {
     document.getElementById("formulario").reset();
 }
+
